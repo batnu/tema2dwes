@@ -31,6 +31,9 @@
 			<a href="hoja1/ejercicio8.php">Ejercicio8</a>
 		</li>
 		<li>
+			<a href="hoja1/ejercicio8b.php">Ejercicio8b</a>
+		</li>
+		<li>
 			<a href="hoja1/ejercicio9.php">Ejercicio9</a>
 		</li>
 		<li>

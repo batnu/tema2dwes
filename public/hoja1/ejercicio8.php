@@ -10,12 +10,41 @@
 		Inserte un número<input type="text" name="numero"/>
 		<input type="submit" name="enviar"/> 
 	</form>
-	<?php
-		$numero = $_GET['numero'];
-		echo "<br/>"; 
-		for ($i=$numero; $i <$numero+5 ; $i++) {
-			echo $i."  ".pow($i, 2)."  ".pow($i, 3)."<br/>";
-		}
-	?>
+	<?php $numero = $_POST['numero'] ?>
+
+	<table>
+		<thead>
+			<th>Numero</th>
+			<th>Cuadrado</th>
+			<th>Cubo</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td><?=$numero+1?></td>
+				<td><?=($numero+1)*($numero+1)?></td>
+				<td><?=($numero+1)*($numero+1)*($numero+1)?></td>
+			</tr>
+			<tr>
+				<td><?=$numero+2?></td>
+				<td><?=($numero+2)*($numero+2)?></td>
+				<td><?=($numero+2)*($numero+2)*($numero+2)?></td>
+			</tr>
+			<tr>
+				<td><?=$numero+3?></td>
+				<td><?=($numero+3)*($numero+3)?></td>
+				<td><?=($numero+3)*($numero+3)*($numero+3)?></td>
+			</tr>
+			<tr>
+				<td><?=$numero+4?></td>
+				<td><?=($numero+4)*($numero+4)?></td>
+				<td><?=($numero+4)*($numero+4)*($numero+4)?></td>
+			</tr>
+			<tr>
+				<td><?=$numero+5?></td>
+				<td><?=($numero+5)*($numero+5)?></td>
+				<td><?=($numero+5)*($numero+5)*($numero+5)?></td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 </html>
